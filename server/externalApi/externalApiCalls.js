@@ -5,7 +5,7 @@ const axios = require('axios');
      forecastApi: async (location, days) => {
          return await axios.get(`http://api.weatherapi.com/v1/forecast.json?key=${apiKey}&q=${location}&days=${days}&aqi=no&alerts=no`)
              .then(function (response) {
-                 return response;
+                return response.data;
              })
              .catch(function (error) {
                  console.log(error);
