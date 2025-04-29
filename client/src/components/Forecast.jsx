@@ -8,7 +8,7 @@ const Forecast = (props) => {
             <div className='container'>
                 <div>
                     <h2>
-                        {`${activeTabData.location.name}, ${activeTabData.location.region}`}
+                        Weather Forecast for <b>{`${activeTabData.location.name} - ${activeTabData.location.region}`}</b>
                     </h2>
                 </div>
                 <div style={{ display: 'flex', justifyContent: "center" }}>
