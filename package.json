@@ -3,11 +3,11 @@
     "version": "1.0.0",
     "private": true,
     "scripts": {
-      "start": "concurrently \"npm run start:server\" \"npm run start:client\"",
-      "start:server": "npm i --prefix server && node server/index.js",
-      "start:client": "npm i --prefix client && npm start --prefix client"
+        "start": "concurrently \"npm run start:server\" \"npm run start:client\"",
+        "start:server": "npm i --prefix server && node server/index.js",
+        "start:client": "npm i --prefix client && npm start --prefix client"
     },
     "devDependencies": {
-      "concurrently": "^8.0.0"
+        "concurrently": "^8.0.0"
     }
-  }
+}
